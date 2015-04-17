@@ -14,17 +14,23 @@ Then go to [`http://localhost:9292`](http://localhost:9292).
 
 #### Ruby (MRI)
 
+With
+
+```console
+$ RACK_ENV=production rackup
+```
+
 ```console
 $ wrk -c 1000 http://localhost:9292
 Running 10s test @ http://localhost:9292
   2 threads and 1000 connections
   Thread Stats   Avg      Stdev     Max   +/- Stdev
-    Latency   204.85ms  110.45ms   1.79s    83.74%
-    Req/Sec   242.38    138.88   525.00     58.50%
-  4840 requests in 10.08s, 1.09MB read
-  Socket errors: connect 751, read 98, write 4, timeout 0
-Requests/sec:    480.14
-Transfer/sec:    111.13KB
+    Latency   159.56ms   74.74ms   1.15s    79.02%
+    Req/Sec   311.83     63.07   460.00     69.00%
+  6224 requests in 10.04s, 1.41MB read
+  Socket errors: connect 751, read 157, write 64, timeout 0
+Requests/sec:    619.91
+Transfer/sec:    143.48KB
 ```
 
 #### Rust
