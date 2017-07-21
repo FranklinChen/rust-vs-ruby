@@ -1,11 +1,15 @@
 ## JSON for Haskell
 
+### To build
+
+```console
+$ stack build
+```
+
 ### To run
 
 ```console
-$ cabal configure
-$ cabal build
-$ cabal run
+$ stack exec haskell-json
 ```
 
 Then go to [`http://localhost:9292`](http://localhost:9292).

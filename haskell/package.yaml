@@ -1,0 +1,26 @@
+name: haskell-json
+version: '0.1.0.0'
+synopsis: Serving JSON
+description: Serving JSON
+category: Text
+author: Franklin Chen
+maintainer: franklinchen@franklinchen.com
+copyright: Franklin Chen
+license: BSD3
+github: FranklinChen/rust-vs-ruby
+extra-source-files:
+- README.md
+ghc-options:
+- -O2
+- -Wall
+dependencies:
+- base >=3
+- warp
+- wai
+- http-types
+- aeson
+- text
+executables:
+  haskell-json:
+    main: Main.hs
+    source-dirs: src
